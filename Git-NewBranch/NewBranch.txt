@@ -1,0 +1,15 @@
+git branch GitNewBranch
+git branch -a
+git checkout GitNewBranch
+echo "This is my new branch file" > branchfile.txt
+git add branchfile.txt
+git commit -m "Added branchfile.txt in GitNewBranch"
+git status
+git checkout master
+git diff master GitNewBranch
+git config --global diff.tool p4merge
+git difftool master GitNewBranch
+git merge GitNewBranch
+git log --oneline --graph --decorate
+git branch -d GitNewBranch
+git status
