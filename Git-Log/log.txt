@@ -1,0 +1,7 @@
+cd GitDemo
+mkdir log
+git config --global -e
+echo Sample Log > error.log
+echo *.log > .gitignore
+echo log/ >> .gitignore
+git status
