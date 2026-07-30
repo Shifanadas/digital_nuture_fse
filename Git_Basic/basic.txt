@@ -1,0 +1,23 @@
+git --version
+git config --global user.name "YourName"
+git config --global user.email "yourmail@example.com"
+git config --global --list
+git config --global core.editor "notepad++"
+git config --global core.editor
+cd %USERPROFILE%\Desktop
+mkdir GitDemo
+cd GitDemo
+git init
+dir /a
+echo Welcome to Git > welcome.txt
+dir
+type welcome.txt
+git status
+git add welcome.txt
+git commit -m "Initial commit"
+git status
+git remote add origin https://gitlab.com/your-gitlab-username/GitDemo.git
+git remote -v
+git pull origin master --allow-unrelated-histories
+git push -u origin master
+git log --oneline
